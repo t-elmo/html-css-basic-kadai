@@ -1,0 +1,75 @@
+h1 p body {
+    margin: o;
+}
+p a {
+    font-size: 20px;
+}
+header {
+    margin-bottom: 20px;
+    background-color: rgb(244, 79, 79);
+    text-align: center;
+
+}
+h1 {
+    color: rgb(255, 255, 255);
+}
+h2 {
+    font-size: 25px;
+    border-bottom: dotted 3px rgb(236, 122, 122);
+}
+h2::before {
+    content: "●";
+    color: rgb(239, 111, 139);
+}
+main {
+    padding: 10px;
+    text-align: center;
+}
+@media screen and (min-width: 768px) {
+    #parent {
+        display: flex;
+        justify-content: space-around;
+    }
+    #parent > div {
+        display: block;
+    }
+}
+@media screen and (max-width: 768px) {
+    #parent {
+        display: block;
+    }
+    #parent > div {
+        display: block;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 25px;
+    }
+}
+.contents {
+    border: solid 3px rgb(238, 204, 204);
+    flex-basis: 25%;
+    padding: 10px 15px;
+    margin: 20px 0;
+    text-align: center;
+}
+.contents > p:nth-child(3)::first-letter {
+  color: rgb(97, 206, 249);
+  font-weight: bold;
+}
+.contents img {
+    margin: 10px o;
+    width: 70%;
+}
+footer {
+    background-color: rgb(244, 79, 79);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+footer a {
+    color: rgb(255, 255, 255);
+
+}
